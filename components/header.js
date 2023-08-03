@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../public/images/logo.jpg";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
@@ -8,66 +9,66 @@ export default function Header() {
     <main>
       <header>
         <div className="logo">
-          <a href="/">
+          <Link href="/">
             <Image src={Logo} width="120" alt="header logo" />
-          </a>
+          </Link>
         </div>
         <nav>
           <ul>
             <li>
-              <a href="/" style={{ display: "flex", alignItems: "center" }}>
+              <Link href="/" style={{ display: "flex", alignItems: "center" }}>
                 Feature
                 <MdKeyboardArrowDown />
-              </a>
+              </Link>
               <ul className="submenu">
                 <li>
-                  <a href="/">Material</a>
+                  <Link href="/">Material</Link>
                 </li>
                 <li>
-                  <a href="/">Cost Effective</a>
+                  <Link href="/">Cost Effective</Link>
                 </li>
                 <li>
-                  <a href="/">Color Combination</a>
+                  <Link href="/">Color Combination</Link>
                 </li>
                 <li>
-                  <a href="/">Nearby Location</a>
+                  <Link href="/">Nearby Location</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/" style={{ display: "flex", alignItems: "center" }}>
+              <Link href="/" style={{ display: "flex", alignItems: "center" }}>
                 Product
                 <MdKeyboardArrowDown />
-              </a>
+              </Link>
               <ul className="submenu">
                 <li>
-                  <a href="/">Beds</a>
+                  <Link href="/">Beds</Link>
                 </li>
                 <li>
-                  <a href="/">Chairs</a>
+                  <Link href="/">Chairs</Link>
                 </li>
                 <li>
-                  <a href="/">Cebinets</a>
+                  <Link href="/">Cebinets</Link>
                 </li>
                 <li>
-                  <a href="/">Desk & Table</a>
+                  <Link href="/">Desk & Table</Link>
                 </li>
                 <li>
-                  <a href="/">Bookcase</a>
+                  <Link href="/">Bookcase</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/">Store</a>
+              <Link href="/">Store</Link>
             </li>
             <li>
-              <a href="/">Gallery</a>
+              <Link href="/">Gallery</Link>
             </li>
             <li>
-              <a href="/">Review</a>
+              <Link href="/">Review</Link>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <Link href="/">Contact</Link>
             </li>
           </ul>
         </nav>
